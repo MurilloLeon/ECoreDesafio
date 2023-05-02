@@ -1,0 +1,13 @@
+################ elements ####################
+
+username_field: "input[name='username']"
+password_field: "input[name='password']"
+button_login: "button[id='btnLogin']"
+text_error: "div[class='alert alert-danger mt-3']"
+text_invoice_list: "h2[class='mt-5']"
+link_invoice_details: "a[href='/invoice/0']"
+text_hotel_name: "h4[class='mt-5']"
+text_invoice_date: "li"
+text_invoice_number: "h6[class='mt-2']"
+text_stay_details: "td"
+text_customer_details: "div"

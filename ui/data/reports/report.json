@@ -1,0 +1,749 @@
+[
+  {
+    "uri": "features/InvoiceDetails.feature",
+    "id": "validate-the-invoice-information.",
+    "keyword": "Feature",
+    "name": "Validate the invoice information.",
+    "description": "",
+    "line": 4,
+    "tags": [
+      {
+        "name": "@information",
+        "line": 3
+      }
+    ],
+    "comments": [
+      {
+        "value": "# encode: UTF-8",
+        "line": 1
+      }
+    ],
+    "elements": [
+      {
+        "id": "validate-the-invoice-information.;validate-the-invoice-information-is-presented.",
+        "keyword": "Scenario",
+        "name": "Validate the invoice information is presented.",
+        "description": "",
+        "line": 7,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@information",
+            "line": 3
+          },
+          {
+            "name": "@regression",
+            "line": 6
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.35.3/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.35.3/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24000
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3005697000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "that I have entered the application site",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/step_login.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6360687000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "that I have logged in correctly",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/step_invoice_datails.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6576507000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "i click on the \"link_invoice_details\" button",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/step_login.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 61026000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should validate that every information in the invoice details is correct.",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/step_invoice_datails.rb:7"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "The text was not displayed correctly. It should be: USD $19.00 but the website is showing USD $19. (RuntimeError)\n./features/support/pages/Common.rb:22:in `text_appers'\n./features/support/pages/InvoiceDetails.rb:19:in `validate_information_invoice_details'\n./features/step_definitions/step_invoice_datails.rb:9:in `\"I should validate that every information in the invoice details is correct.\"'\nfeatures/InvoiceDetails.feature:11:in `Then I should validate that every information in the invoice details is correct.'",
+              "duration": 5546720000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2215237000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.35.3/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 169183000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uri": "features/Login.feature",
+    "id": "login,-login-according-to-the-different-scenarios.",
+    "keyword": "Feature",
+    "name": "LOGIN, login according to the different scenarios.",
+    "description": "",
+    "line": 4,
+    "tags": [
+      {
+        "name": "@login",
+        "line": 3
+      }
+    ],
+    "comments": [
+      {
+        "value": "# encode: UTF-8",
+        "line": 1
+      }
+    ],
+    "elements": [
+      {
+        "id": "login,-login-according-to-the-different-scenarios.;validate-if-the-user-can-authenticate-in-the-application-with-the-credentials-provided",
+        "keyword": "Scenario",
+        "name": "Validate if the user can authenticate in the application with the credentials provided",
+        "description": "",
+        "line": 7,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 3
+          },
+          {
+            "name": "@regression",
+            "line": 6
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.35.3/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.35.3/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24000
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1803377000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "that I have entered the application site",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/step_login.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5341186000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "that I have filled in my login credentials correctly",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/step_login.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 161731000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "i click on the \"button_login\" button",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/step_login.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6385175000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should validate that I have been successfully authenticated.",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/step_login.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31182000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2209246000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.35.3/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 89926000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login,-login-according-to-the-different-scenarios.;validate-that-the-application-denies-the-user-login-with-invalid-credentials;;2",
+        "keyword": "Scenario Outline",
+        "name": "Validate that the application denies the user login with invalid credentials",
+        "description": "",
+        "line": 22,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 3
+          },
+          {
+            "name": "@sad_scenario",
+            "line": 13
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.35.3/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.35.3/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23000
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1779506000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "that I have entered the application site",
+            "line": 15,
+            "match": {
+              "location": "features/step_definitions/step_login.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5331557000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I attempt to login with \"username_demo_capslock\" and \"correct_password\"",
+            "line": 16,
+            "match": {
+              "location": "features/step_definitions/step_login.rb:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 161999000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "i click on the \"button_login\" button",
+            "line": 17,
+            "match": {
+              "location": "features/step_definitions/step_login.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3369363000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see an element with an error message text appear",
+            "line": 18,
+            "match": {
+              "location": "features/step_definitions/step_login.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27297000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2201092000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.35.3/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 93182000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login,-login-according-to-the-different-scenarios.;validate-that-the-application-denies-the-user-login-with-invalid-credentials;;3",
+        "keyword": "Scenario Outline",
+        "name": "Validate that the application denies the user login with invalid credentials",
+        "description": "",
+        "line": 23,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 3
+          },
+          {
+            "name": "@sad_scenario",
+            "line": 13
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.35.3/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.35.3/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24000
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1768216000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "that I have entered the application site",
+            "line": 15,
+            "match": {
+              "location": "features/step_definitions/step_login.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6337274000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I attempt to login with \"incorrect_username_demo\" and \"correct_password\"",
+            "line": 16,
+            "match": {
+              "location": "features/step_definitions/step_login.rb:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 162130000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "i click on the \"button_login\" button",
+            "line": 17,
+            "match": {
+              "location": "features/step_definitions/step_login.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5363069000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see an element with an error message text appear",
+            "line": 18,
+            "match": {
+              "location": "features/step_definitions/step_login.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26643000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2207454000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.35.3/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 90746000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login,-login-according-to-the-different-scenarios.;validate-that-the-application-denies-the-user-login-with-invalid-credentials;;4",
+        "keyword": "Scenario Outline",
+        "name": "Validate that the application denies the user login with invalid credentials",
+        "description": "",
+        "line": 24,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 3
+          },
+          {
+            "name": "@sad_scenario",
+            "line": 13
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.35.3/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.35.3/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26000
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1754984000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "that I have entered the application site",
+            "line": 15,
+            "match": {
+              "location": "features/step_definitions/step_login.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6342066000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I attempt to login with \"username_demo\" and \"incorrect_password\"",
+            "line": 16,
+            "match": {
+              "location": "features/step_definitions/step_login.rb:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 129810000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "i click on the \"button_login\" button",
+            "line": 17,
+            "match": {
+              "location": "features/step_definitions/step_login.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4363581000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see an element with an error message text appear",
+            "line": 18,
+            "match": {
+              "location": "features/step_definitions/step_login.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22912000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2196427000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.35.3/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 89984000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login,-login-according-to-the-different-scenarios.;validate-that-the-application-denies-the-user-login-with-invalid-credentials;;5",
+        "keyword": "Scenario Outline",
+        "name": "Validate that the application denies the user login with invalid credentials",
+        "description": "",
+        "line": 25,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 3
+          },
+          {
+            "name": "@sad_scenario",
+            "line": 13
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.35.3/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.35.3/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 69000
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1699400000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "that I have entered the application site",
+            "line": 15,
+            "match": {
+              "location": "features/step_definitions/step_login.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3332434000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I attempt to login with \"username_demo\" and \"empty_password\"",
+            "line": 16,
+            "match": {
+              "location": "features/step_definitions/step_login.rb:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 156483000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "i click on the \"button_login\" button",
+            "line": 17,
+            "match": {
+              "location": "features/step_definitions/step_login.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6363186000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see an element with an error message text appear",
+            "line": 18,
+            "match": {
+              "location": "features/step_definitions/step_login.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23910000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2206135000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.35.3/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 86641000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
